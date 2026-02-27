@@ -5,11 +5,11 @@
  * 1. Fetch plans from API → render pricing cards
  * 2. User clicks plan → register modal opens
  * 3. User submits register → auto login → auto checkout
- * 4. Redirect to Xendit payment page
+ * 4. Redirect to Midtrans payment page
  */
 
 // ── CONFIG ─────────────────────────────────────────────────────────
-const API_BASE = 'http://localhost:8080/api';
+const API_BASE = '/api';
 const UTM_SOURCE = 'student-kimia-v1';
 const TARGET_SEGMENT = 'student';
 
@@ -258,7 +258,7 @@ async function doLoginAndCheckout(email, password) {
         throw new Error(checkoutData.message || 'Checkout gagal');
     }
 
-    // Step 4: Redirect to Xendit payment page
+    // Step 4: Redirect to Midtrans payment page
     const checkoutUrl = checkoutData.data?.checkout_url;
     if (checkoutUrl) {
         window.location.href = checkoutUrl;
