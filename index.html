@@ -231,84 +231,16 @@
     <section id="demo">
         <div class="container">
             <h2 class="section-title">Coba <span class="gradient-text">Langsung</span></h2>
-            <p class="section-sub">Gabungkan atom — bangun molekul. Klik atom di bawah, lihat apa yang terbentuk!</p>
+            <p class="section-sub">Ini bukan gambar — ini Kimia Lab <strong>asli</strong>. Klik atom, bangun molekul 3D,
+                lihat hasilnya!</p>
 
-            <div class="mol-builder" id="mol-builder">
-                <!-- Challenge Tabs -->
-                <div class="mol-challenges">
-                    <button class="mol-challenge-btn active" data-target='{"H":2,"O":1}' data-label="💧 Air (H₂O)"
-                        data-free="true">
-                        <span class="mol-ch-emoji">💧</span>
-                        <span class="mol-ch-name">H₂O</span>
-                        <span class="mol-ch-sub">Air</span>
-                    </button>
-                    <button class="mol-challenge-btn" data-target='{"C":1,"O":2}' data-label="🌿 Karbon Dioksida"
-                        data-free="true">
-                        <span class="mol-ch-emoji">🌿</span>
-                        <span class="mol-ch-name">CO₂</span>
-                        <span class="mol-ch-sub">Karbon Dioksida</span>
-                    </button>
-                    <button class="mol-challenge-btn mol-locked" data-target='{"Na":1,"Cl":1}'
-                        data-label="🧂 Garam Dapur" data-free="false">
-                        <span class="mol-ch-emoji">🧂</span>
-                        <span class="mol-ch-name">NaCl</span>
-                        <span class="mol-ch-sub">Garam</span>
-                        <span class="mol-lock-icon">🔒</span>
-                    </button>
-                    <button class="mol-challenge-btn mol-locked" data-target='{"C":1,"H":4}' data-label="🔥 Gas Alam"
-                        data-free="false">
-                        <span class="mol-ch-emoji">🔥</span>
-                        <span class="mol-ch-name">CH₄</span>
-                        <span class="mol-ch-sub">Metana</span>
-                        <span class="mol-lock-icon">🔒</span>
-                    </button>
-                    <button class="mol-challenge-btn mol-locked" data-target='{"N":1,"H":3}' data-label="🌾 Pupuk Dunia"
-                        data-free="false">
-                        <span class="mol-ch-emoji">🌾</span>
-                        <span class="mol-ch-name">NH₃</span>
-                        <span class="mol-ch-sub">Amonia</span>
-                        <span class="mol-lock-icon">🔒</span>
-                    </button>
-                    <button class="mol-challenge-btn mol-locked" data-target='{"H":2,"S":1,"O":4}'
-                        data-label="⚗️ Raja Asam" data-free="false">
-                        <span class="mol-ch-emoji">⚗️</span>
-                        <span class="mol-ch-name">H₂SO₄</span>
-                        <span class="mol-ch-sub">Asam Sulfat</span>
-                        <span class="mol-lock-icon">🔒</span>
-                    </button>
-                </div>
-
-                <!-- Build Area -->
-                <div class="mol-workspace">
-                    <div class="mol-build-area" id="mol-build-area">
-                        <div class="mol-canvas" id="mol-canvas">
-                            <p class="mol-placeholder" id="mol-placeholder">Klik atom di bawah untuk mulai 👇</p>
-                        </div>
-                        <div class="mol-formula-bar">
-                            <span class="mol-formula" id="mol-formula"></span>
-                            <button class="mol-reset-btn" id="mol-reset" title="Reset">✕</button>
-                        </div>
-                    </div>
-
-                    <!-- Atom Palette -->
-                    <div class="mol-palette" id="mol-palette">
-                        <!-- Populated by JS based on active challenge -->
-                    </div>
-
-                    <!-- Result Area -->
-                    <div class="mol-result" id="mol-result" style="display:none;">
-                    </div>
-                </div>
-
-                <!-- Locked Overlay -->
-                <div class="mol-locked-overlay" id="mol-locked-overlay" style="display:none;">
-                    <div class="mol-locked-content">
-                        <span class="mol-locked-icon-big">🔒</span>
-                        <h3>Molekul Premium</h3>
-                        <p>Upgrade ke Atomic untuk mengakses 30+ molekul, termasuk tantangan level sulit!</p>
-                        <a href="#pricing" class="btn btn-primary">Upgrade — Seharga 2 Gelas Kopi ☕</a>
-                    </div>
-                </div>
+            <!-- Real Kimia Lab Demo (iframe to Atomic app demo mode) -->
+            <div class="demo-iframe-wrap" id="demo-iframe-wrap">
+                <iframe id="demo-iframe" src="http://localhost:5173/#/molecule-demo"
+                    title="Kimia Lab Demo — Bangun Molekul 3D" loading="lazy" allow="accelerometer; gyroscope"
+                    sandbox="allow-scripts allow-same-origin"
+                    style="width:100%;height:680px;border:none;border-radius:16px;"></iframe>
+                <div class="demo-iframe-glow"></div>
             </div>
 
             <div class="demo-features-row">
