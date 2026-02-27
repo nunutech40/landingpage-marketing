@@ -87,16 +87,17 @@ function renderPricingCards(plans, popularId) {
         const dailyRate = Math.round(plan.price_idr / plan.duration_days);
         const durationLabel = getDurationLabel(months);
 
-        // Anchor pricing: show "original" price (2x monthly rate × months)
-        const anchorPrice = monthlyRate * 2 * months;
-        const discount = Math.round((1 - plan.price_idr / anchorPrice) * 100);
+        // Anchor pricing: show "original" price (monthly plan × months)
+        // Use actual base monthly rate for honest comparison
+        const baseMonthly = plans[0].price_idr; // first plan = monthly baseline
+        const anchorPrice = baseMonthly * months;
+        const discount = months > 1 ? Math.round((1 - plan.price_idr / anchorPrice) * 100) : 0;
 
-        // Per-day framing for price trivialization
-        const dailyAnalogy = dailyRate < 3000
-            ? 'Lebih murah dari kopi cafe'
-            : dailyRate < 5000
-                ? 'Harga 1 kopi sachet'
-                : 'Harga 1 cup kopi';
+        // Coffee comparison — compare MONTHLY price to cafe coffee (~35k/cup)
+        const coffeePerMonth = Math.round(plan.price_idr / months / 35000 * 10) / 10;
+        const monthlyAnalogy = coffeePerMonth <= 2
+            ? `Cuma seharga ${coffeePerMonth <= 1.5 ? '1–2' : '2'} gelas kopi café ☕`
+            : `≈ ${Math.ceil(coffeePerMonth)} gelas kopi café per bulan`;
 
         return `
             <div class="price-card ${isPopular ? 'popular' : ''}">
@@ -111,7 +112,7 @@ function renderPricingCards(plans, popularId) {
                 ? `Rp ${formatNumber(monthlyRate)}/bulan`
                 : `per bulan`}
                 </div>
-                <div class="price-daily">≈ Rp ${formatNumber(dailyRate)}/hari — ${dailyAnalogy}</div>
+                <div class="price-daily">${monthlyAnalogy}</div>
                 ${months > 1
                 ? `<div class="price-save">Hemat ${discount}%</div>`
                 : '<div style="height:28px"></div>'}
