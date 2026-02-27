@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atomic — Belajar Kimia Interaktif 3D untuk Pelajar SMA</title>
+    <meta name="description"
+        content="Pahami atom, orbital, dan molekul lewat visualisasi 3D interaktif. Lebih murah dari bimbel, lebih seru dari buku. Mulai dari Rp 2.300/hari.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ═══ SECTION 1: HERO — "The Hook" ════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="nucleus"></div>
+        </div>
+        <div class="container hero-content">
+            <span class="badge" id="hero-badge">⚛️ Dipakai 118+ elemen interaktif — siap jelajah</span>
+            <h1>Pahami Kimia,<br><span class="gradient-text">Bukan Hafal Kimia</span></h1>
+            <p class="hero-sub">Breakdown materi sampai ke level atom — putar, zoom, jelajahi dalam 3D.
+                Paham dari dasarnya, bukan cuma hafal rumusnya.</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="btn btn-primary btn-lg" id="cta-hero-primary">Mulai Belajar — Rp
+                    2.300/hari</a>
+                <a href="#demo" class="btn btn-ghost btn-lg" id="cta-hero-secondary">Lihat Demo ↓</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">118</span><span class="stat-label">Elemen</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">3D</span><span class="stat-label">Interaktif</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">ID/EN</span><span class="stat-label">Bilingual</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 2: SOCIAL PROOF BAR ═════════════════════════════ -->
+    <section id="proof">
+        <div class="container">
+            <div class="proof-bar">
+                <div class="proof-chip">
+                    <span class="proof-icon">📚</span>
+                    <span>Sesuai <strong>Kurikulum Merdeka</strong></span>
+                </div>
+                <div class="proof-chip">
+                    <span class="proof-icon">🧪</span>
+                    <span>Materi Kimia & Fisika <strong>Kelas 10-12</strong></span>
+                </div>
+                <div class="proof-chip">
+                    <span class="proof-icon">🔬</span>
+                    <span>Dibuat oleh <strong>Tim Riset Pendidikan</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 3: PROBLEM AGITATION — "We feel your pain" ══════ -->
+    <section id="problem">
+        <div class="container">
+            <h2 class="section-title">Kenapa Kimia Terasa <span class="gradient-text">Susah?</span></h2>
+            <p class="section-sub">Bukan kamu yang salah — tapi caranya yang belum tepat.</p>
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-emoji">📖</div>
+                    <h3>Buku Bikin Ngantuk</h3>
+                    <p>300+ halaman teori kering. Baca 10 menit langsung ngantuk. Gambar atom cuma hitam-putih 2D — gak
+                        bisa diputer, gak bisa di-zoom. Teori doang, gak bisa langsung praktek.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-emoji">🥱</div>
+                    <h3>Video YouTube Terlalu Panjang</h3>
+                    <p>30 menit video, yang kamu pahami cuma 5 menit terakhir. Dan kamu cuma nonton — gak bisa
+                        interaksi.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-emoji">💸</div>
+                    <h3>Bimbel Mahal, Belum Tentu Cocok</h3>
+                    <p>Rp 500rb—2jt/bulan, tapi materinya sama kayak di sekolah. Private tutor? Rp 150rb per jam.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-emoji">😤</div>
+                    <h3>Guru Terlalu Cepat</h3>
+                    <p>Mau tanya tapi malu. Udah ketinggalan, tapi gak bisa minta diulang lagi.</p>
+                </div>
+            </div>
+
+            <div class="problem-bottom">
+                <p class="problem-hook">Nilai Kimia jelek bukan karena kamu <em>bodoh</em> — tapi karena cara belajarnya
+                    yang <strong>belum tepat</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 4: SOLUTION REVEAL + FIRST PRINCIPLES ══════════ -->
+    <section id="solution">
+        <div class="container">
+            <div class="solution-transition">
+                <span class="solution-arrow">↓</span>
+                <p class="solution-intro">Cara berpikir yang sama dengan para jenius dunia</p>
+            </div>
+            <div class="solution-hero">
+                <h2 class="solution-headline">Belajar dengan <span class="gradient-text">First Principles</span></h2>
+                <p class="solution-sub">Pecah sesuatu sampai ke bagian paling dasar, lalu bangun pemahaman dari situ.
+                    <strong>Bagian paling dasar dari semua materi? Atom.</strong>
+                </p>
+            </div>
+
+            <!-- Thinkers Row -->
+            <div class="fp-thinkers">
+                <div class="fp-thinker">
+                    <img src="img/feynman.png" alt="Richard Feynman" class="fp-avatar">
+                    <div class="fp-thinker-info">
+                        <h4>Richard Feynman</h4>
+                        <p class="fp-role">Fisikawan Nobel</p>
+                        <blockquote>"Kalau gak bisa jelaskan secara sederhana, berarti kamu belum paham betul."
+                        </blockquote>
+                        <p class="fp-method">Feynman Technique: breakdown konsep ke level paling dasar, lalu jelaskan
+                            pakai bahasa sederhana.</p>
+                    </div>
+                </div>
+                <div class="fp-thinker">
+                    <img src="img/elon-musk.png" alt="Elon Musk" class="fp-avatar">
+                    <div class="fp-thinker-info">
+                        <h4>Elon Musk</h4>
+                        <p class="fp-role">Founder Tesla & SpaceX</p>
+                        <blockquote>"Bongkar semuanya sampai ke kebenaran paling dasar, lalu build up dari situ."
+                        </blockquote>
+                        <p class="fp-method">Cara Musk bikin roket murah: bukan tanya "kenapa mahal", tapi "material
+                            dasarnya apa?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First Principles Breakdown Visual -->
+            <div class="fp-breakdown">
+                <div class="fp-step">
+                    <div class="fp-circle">🏠</div>
+                    <div class="fp-content">
+                        <h4>Mulai dari yang Kompleks</h4>
+                        <p>Air, besi, plastik — benda di sekitarmu</p>
+                    </div>
+                </div>
+                <div class="fp-arrow">→</div>
+                <div class="fp-step">
+                    <div class="fp-circle">🧪</div>
+                    <div class="fp-content">
+                        <h4>Breakdown ke Molekul</h4>
+                        <p>Air = H₂O. Cuma 2 jenis atom.</p>
+                    </div>
+                </div>
+                <div class="fp-arrow">→</div>
+                <div class="fp-step fp-step-highlight">
+                    <div class="fp-circle">⚛️</div>
+                    <div class="fp-content">
+                        <h4>Sampai ke Atom</h4>
+                        <p>Level terkecil = <strong>pemahaman terdalam</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fp-punchline">
+                <p>Ini yang Atomic lakukan — bawa kamu ke level atom, lalu bangun pemahaman dari situ. 🚀</p>
+            </div>
+
+            <div class="solution-badges">
+                <span class="sol-badge">⚛️ Atom 3D</span>
+                <span class="sol-badge">🧪 Molecule Builder</span>
+                <span class="sol-badge">📊 Tabel Periodik</span>
+                <span class="sol-badge">🌐 Bilingual</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 5: FEATURES — Benefit-First ════════════════════ -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Belajar yang <span class="gradient-text">Beneran Masuk</span></h2>
+            <p class="section-sub">Bukan hafalan rumus — tapi pemahaman dari level terkecil, naik ke atas.</p>
+            <div class="features-grid">
+                <div class="feature-card feature-card-fp">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Latih Otak Berpikir First Principles</h3>
+                    <p>Jangan cuma hafal "air = H₂O" — pahami <em>kenapa</em> Hidrogen dan Oksigen bisa berikatan. Mulai
+                        dari atom, bangun pemahaman ke atas. Ini cara berpikir Elon Musk & Feynman.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚛️</div>
+                    <h3>Ngerti Orbital — Gak Cuma Teori</h3>
+                    <p>Bentuk orbital s, p, d, f sering bikin bingung? Di sini kamu bisa lihat langsung bentuknya dalam
+                        3D. Bukan gambar di buku.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧪</div>
+                    <h3>Bangun Molekul Sendiri</h3>
+                    <p>Susun atom, lihat ikatan kovalen terbentuk, amati sudut ikatan. Kimia jadi kayak main LEGO — tapi
+                        beneran ilmiah.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>118 Elemen, Lengkap Datanya</h3>
+                    <p>Tap elemen apa aja di tabel periodik → langsung muncul data lengkap, konfigurasi elektron, dan
+                        model 3D-nya.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Siap Olimpiade — Bilingual</h3>
+                    <p>Semua konten tersedia dalam Bahasa Indonesia dan English. Mau persiapan OSN atau ujian
+                        internasional? Siap.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Buka di Mana Aja — No Install</h3>
+                    <p>HP, tablet, laptop — cukup buka browser. Gak perlu download app 500MB. Belajar di bus, di kelas,
+                        di warung kopi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 6: PRODUCT DEMO ═════════════════════════════════ -->
+    <section id="demo">
+        <div class="container">
+            <h2 class="section-title">Coba <span class="gradient-text">Langsung</span></h2>
+            <p class="section-sub">Gabungkan atom — bangun molekul. Klik atom di bawah, lihat apa yang terbentuk!</p>
+
+            <div class="mol-builder" id="mol-builder">
+                <!-- Challenge Tabs -->
+                <div class="mol-challenges">
+                    <button class="mol-challenge-btn active" data-target='{"H":2,"O":1}' data-label="💧 Air (H₂O)"
+                        data-free="true">
+                        <span class="mol-ch-emoji">💧</span>
+                        <span class="mol-ch-name">H₂O</span>
+                        <span class="mol-ch-sub">Air</span>
+                    </button>
+                    <button class="mol-challenge-btn" data-target='{"C":1,"O":2}' data-label="🌿 Karbon Dioksida"
+                        data-free="true">
+                        <span class="mol-ch-emoji">🌿</span>
+                        <span class="mol-ch-name">CO₂</span>
+                        <span class="mol-ch-sub">Karbon Dioksida</span>
+                    </button>
+                    <button class="mol-challenge-btn mol-locked" data-target='{"Na":1,"Cl":1}'
+                        data-label="🧂 Garam Dapur" data-free="false">
+                        <span class="mol-ch-emoji">🧂</span>
+                        <span class="mol-ch-name">NaCl</span>
+                        <span class="mol-ch-sub">Garam</span>
+                        <span class="mol-lock-icon">🔒</span>
+                    </button>
+                    <button class="mol-challenge-btn mol-locked" data-target='{"C":1,"H":4}' data-label="🔥 Gas Alam"
+                        data-free="false">
+                        <span class="mol-ch-emoji">🔥</span>
+                        <span class="mol-ch-name">CH₄</span>
+                        <span class="mol-ch-sub">Metana</span>
+                        <span class="mol-lock-icon">🔒</span>
+                    </button>
+                    <button class="mol-challenge-btn mol-locked" data-target='{"N":1,"H":3}' data-label="🌾 Pupuk Dunia"
+                        data-free="false">
+                        <span class="mol-ch-emoji">🌾</span>
+                        <span class="mol-ch-name">NH₃</span>
+                        <span class="mol-ch-sub">Amonia</span>
+                        <span class="mol-lock-icon">🔒</span>
+                    </button>
+                    <button class="mol-challenge-btn mol-locked" data-target='{"H":2,"S":1,"O":4}'
+                        data-label="⚗️ Raja Asam" data-free="false">
+                        <span class="mol-ch-emoji">⚗️</span>
+                        <span class="mol-ch-name">H₂SO₄</span>
+                        <span class="mol-ch-sub">Asam Sulfat</span>
+                        <span class="mol-lock-icon">🔒</span>
+                    </button>
+                </div>
+
+                <!-- Build Area -->
+                <div class="mol-workspace">
+                    <div class="mol-build-area" id="mol-build-area">
+                        <div class="mol-canvas" id="mol-canvas">
+                            <p class="mol-placeholder" id="mol-placeholder">Klik atom di bawah untuk mulai 👇</p>
+                        </div>
+                        <div class="mol-formula-bar">
+                            <span class="mol-formula" id="mol-formula"></span>
+                            <button class="mol-reset-btn" id="mol-reset" title="Reset">✕</button>
+                        </div>
+                    </div>
+
+                    <!-- Atom Palette -->
+                    <div class="mol-palette" id="mol-palette">
+                        <!-- Populated by JS based on active challenge -->
+                    </div>
+
+                    <!-- Result Area -->
+                    <div class="mol-result" id="mol-result" style="display:none;">
+                    </div>
+                </div>
+
+                <!-- Locked Overlay -->
+                <div class="mol-locked-overlay" id="mol-locked-overlay" style="display:none;">
+                    <div class="mol-locked-content">
+                        <span class="mol-locked-icon-big">🔒</span>
+                        <h3>Molekul Premium</h3>
+                        <p>Upgrade ke Atomic untuk mengakses 30+ molekul, termasuk tantangan level sulit!</p>
+                        <a href="#pricing" class="btn btn-primary">Upgrade — Rp 2.300/hari</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-features-row">
+                <div class="demo-mini">
+                    <span class="demo-mini-icon">🧪</span>
+                    <span>30+ Molekul</span>
+                </div>
+                <div class="demo-mini">
+                    <span class="demo-mini-icon">🔬</span>
+                    <span>3D Interaktif</span>
+                </div>
+                <div class="demo-mini">
+                    <span class="demo-mini-icon">🧠</span>
+                    <span>Fun Facts</span>
+                </div>
+                <div class="demo-mini">
+                    <span class="demo-mini-icon">📐</span>
+                    <span>Bohr ↔ Orbital</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 7: COMPARISON / ANCHORING ═══════════════════════ -->
+    <section id="compare">
+        <div class="container">
+            <h2 class="section-title">Bandingkan <span class="gradient-text">Sendiri</span></h2>
+            <p class="section-sub">Kamu yang tentukan mana yang worth it.</p>
+
+            <div class="compare-table">
+                <div class="compare-header">
+                    <div class="compare-cell compare-label-cell"></div>
+                    <div class="compare-cell">Bimbel Offline</div>
+                    <div class="compare-cell">Private Tutor</div>
+                    <div class="compare-cell compare-highlight">⚛️ Atomic</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell compare-label-cell">💰 Harga/bulan</div>
+                    <div class="compare-cell compare-expensive">Rp 500rb — 2jt</div>
+                    <div class="compare-cell compare-expensive">Rp 600rb+</div>
+                    <div class="compare-cell compare-highlight compare-cheap">Rp 70rb</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell compare-label-cell">🕐 Waktu belajar</div>
+                    <div class="compare-cell">Jadwal tetap</div>
+                    <div class="compare-cell">Jadwal tetap</div>
+                    <div class="compare-cell compare-highlight">Kapan aja ✅</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell compare-label-cell">🔬 Visualisasi 3D</div>
+                    <div class="compare-cell">❌</div>
+                    <div class="compare-cell">❌</div>
+                    <div class="compare-cell compare-highlight">✅ Interaktif</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell compare-label-cell">🔄 Bisa diulang</div>
+                    <div class="compare-cell">❌</div>
+                    <div class="compare-cell">❌ (bayar lagi)</div>
+                    <div class="compare-cell compare-highlight">✅ Unlimited</div>
+                </div>
+                <div class="compare-row">
+                    <div class="compare-cell compare-label-cell">🌐 Bilingual</div>
+                    <div class="compare-cell">❌</div>
+                    <div class="compare-cell">Tergantung</div>
+                    <div class="compare-cell compare-highlight">✅ ID & EN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 8: PRICING ══════════════════════════════════════ -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title">Investasi <span class="gradient-text">Kecil</span>, Dampak <span
+                    class="gradient-text">Besar</span></h2>
+            <p class="section-sub">Lebih murah dari secangkir kopi cafe per hari. Serius.</p>
+            <div class="pricing-grid" id="pricing-cards">
+                <!-- Cards will be populated by JS from API -->
+                <div class="loading-shimmer">Memuat harga...</div>
+            </div>
+            <div class="pricing-note">
+                <p>💳 Bayar pakai QRIS, Transfer Bank, GoPay, OVO, DANA, ShopeePay</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ REGISTER MODAL ═════════════════════════════════════════ -->
+    <div id="register-overlay" class="overlay hidden">
+        <div class="modal">
+            <button class="modal-close" id="close-modal">&times;</button>
+
+            <!-- Step 1: Register -->
+            <div id="step-register" class="modal-step">
+                <div class="modal-icon">🎓</div>
+                <h2>Daftar & Mulai Belajar</h2>
+                <p class="modal-sub" id="selected-plan-info">—</p>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="reg-name">Nama Lengkap</label>
+                        <input type="text" id="reg-name" placeholder="Nama kamu" required minlength="2">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" placeholder="Min. 8 karakter" required minlength="8">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="btn-register">
+                        <span class="btn-text">Daftar & Bayar</span>
+                        <span class="btn-loading hidden">
+                            <span class="spinner"></span> Memproses...
+                        </span>
+                    </button>
+                </form>
+                <p class="modal-footer-text">Sudah punya akun? <a href="#" id="link-login">Login di sini</a></p>
+                <div id="register-error" class="error-msg hidden"></div>
+            </div>
+
+            <!-- Step 1b: Login -->
+            <div id="step-login" class="modal-step hidden">
+                <div class="modal-icon">🔐</div>
+                <h2>Login</h2>
+                <p class="modal-sub">Masuk ke akun kamu untuk melanjutkan pembayaran.</p>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Password kamu" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="btn-login">
+                        <span class="btn-text">Login & Bayar</span>
+                        <span class="btn-loading hidden">
+                            <span class="spinner"></span> Memproses...
+                        </span>
+                    </button>
+                </form>
+                <p class="modal-footer-text">Belum punya akun? <a href="#" id="link-register">Daftar di sini</a></p>
+                <div id="login-error" class="error-msg hidden"></div>
+            </div>
+
+            <!-- Step 2: Processing checkout -->
+            <div id="step-checkout" class="modal-step hidden">
+                <div class="modal-icon">⏳</div>
+                <h2>Menyiapkan Pembayaran...</h2>
+                <p class="modal-sub">Kamu akan dialihkan ke halaman pembayaran Xendit.</p>
+                <div class="checkout-loader">
+                    <div class="spinner-lg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ SECTION 9: FAQ ══════════════════════════════════════════ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan <span class="gradient-text">yang Sering Ditanya</span></h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Apa bedanya Atomic dengan nonton YouTube gratis?</summary>
+                    <p>YouTube itu tontonan pasif — kamu cuma nonton. Di Atomic, kamu bisa <strong>berinteraksi
+                            langsung</strong> dengan model atom 3D: putar, zoom, switch mode Bohr ke orbital. Otak
+                        memproses 60.000x lebih cepat lewat visual daripada teks. Itu kenapa 1 menit di Atomic = 10
+                        menit baca buku.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Apakah ini sesuai kurikulum sekolah?</summary>
+                    <p>Ya! Konten Atomic mengikuti Kurikulum Merdeka untuk Kimia & Fisika SMA kelas 10-12. Cocok buat
+                        persiapan ulangan, UTS, UAS, dan bahkan OSN (Olimpiade Sains Nasional).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Bisa diakses dari HP?</summary>
+                    <p>100%! Atomic berjalan di browser — HP, tablet, laptop, semua bisa. Gak perlu download app atau
+                        install apapun. Buka Chrome/Safari → langsung belajar.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Bagaimana cara bayarnya?</summary>
+                    <p>Setelah daftar, kamu langsung diarahkan ke halaman pembayaran. Bisa bayar pakai <strong>QRIS,
+                            Transfer Bank, GoPay, OVO, DANA, ShopeePay</strong>, dan metode lainnya. Akses langsung
+                        aktif setelah bayar!</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kok murah banget? Ini beneran?</summary>
+                    <p>Beneran. Misi kami adalah bikin sains berkualitas yang terjangkau untuk semua pelajar Indonesia.
+                        Harga bimbel offline itu Rp 500rb-2jt/bulan — kami percaya gak harus semahal itu untuk belajar
+                        dengan baik.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Kalau sudah bayar tapi akses belum aktif?</summary>
+                    <p>Akses biasanya aktif dalam hitungan detik. Kalau lebih dari 5 menit belum aktif, hubungi kami
+                        lewat email dan kami bantu segera.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SECTION 10: FINAL CTA ══════════════════════════════════ -->
+    <section id="final-cta">
+        <div class="container">
+            <div class="final-cta-card">
+                <div class="final-cta-glow"></div>
+                <h2>Siap Jadi yang <span class="gradient-text">Paling Paham</span> di Kelas?</h2>
+                <p>Mulai dari atom, bangun pemahaman ke atas — cara belajar yang sama dengan Feynman & Musk.
+                    Lebih murah dari kopi cafe per hari.</p>
+                <a href="#pricing" class="btn btn-primary btn-lg" id="cta-final">Mulai Belajar Sekarang</a>
+                <span class="final-note">Bisa batal kapan saja • Bayar bulanan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">⚛️ Atomic</span>
+                    <p>Interactive 3D Atom Explorer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Fitur</a>
+                    <a href="#pricing">Harga</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Atomic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
