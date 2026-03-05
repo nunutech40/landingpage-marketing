@@ -1184,6 +1184,35 @@ img {
     color: var(--text-muted);
 }
 
+/* Password toggle */
+.password-wrap {
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 48px;
+}
+
+.pw-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.pw-toggle:hover {
+    color: var(--text-primary);
+}
+
 .error-msg {
     margin-top: 16px;
     padding: 12px 16px;

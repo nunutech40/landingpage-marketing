@@ -199,7 +199,12 @@ async function handleRegister() {
 
         if (!regRes.ok) {
             const data = await regRes.json();
-            throw new Error(data.message || 'Registrasi gagal');
+            // API returns {"error": {"message": "..."}}
+            const msg = data.error?.message || data.message || 'Registrasi gagal';
+            if (regRes.status === 409) {
+                throw new Error('Email sudah terdaftar. Klik "Login di sini" di bawah.');
+            }
+            throw new Error(msg);
         }
 
         // Step 2: Auto login
@@ -234,7 +239,8 @@ async function doLoginAndCheckout(email, password) {
     const loginData = await loginRes.json();
 
     if (!loginRes.ok) {
-        throw new Error(loginData.message || 'Login gagal');
+        const msg = loginData.error?.message || loginData.message || 'Login gagal';
+        throw new Error(msg);
     }
 
     authToken = loginData.data?.access_token;
@@ -255,7 +261,8 @@ async function doLoginAndCheckout(email, password) {
 
     if (!checkoutRes.ok) {
         showStep('register');
-        throw new Error(checkoutData.message || 'Checkout gagal');
+        const msg = checkoutData.error?.message || checkoutData.message || 'Checkout gagal';
+        throw new Error(msg);
     }
 
     // Step 4: Redirect to Midtrans payment page
@@ -326,6 +333,15 @@ function getDurationLabel(months) {
 
 function formatNumber(num) {
     return new Intl.NumberFormat('id-ID').format(num);
+}
+
+// ── PASSWORD TOGGLE ───────────────────────────────────────────────
+function togglePassword(inputId, btn) {
+    const input = document.getElementById(inputId);
+    const isPassword = input.type === 'password';
+    input.type = isPassword ? 'text' : 'password';
+    btn.querySelector('.eye-open').style.display = isPassword ? 'none' : 'block';
+    btn.querySelector('.eye-closed').style.display = isPassword ? 'block' : 'none';
 }
 
 // ═══════════════════════════════════════════════════════════════════

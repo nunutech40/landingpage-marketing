@@ -7,11 +7,68 @@
     <title>Atomic — Belajar Kimia Interaktif 3D untuk Pelajar SMA</title>
     <meta name="description"
         content="Pahami atom, orbital, dan molekul lewat visualisasi 3D interaktif. Lebih murah dari bimbel, lebih seru dari buku. Cuma seharga 2 gelas kopi café per bulan.">
+    <meta name="keywords"
+        content="belajar kimia, kimia SMA, atom 3D, tabel periodik interaktif, visualisasi atom, kimia interaktif, pelajar SMA, materi kimia, orbital atom, molekul 3D">
+    <meta name="author" content="Atomic by SAINS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sains-atomic.web.id/">
+    <meta name="theme-color" content="#7c5cfc">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sains-atomic.web.id/">
+    <meta property="og:title" content="Atomic — Belajar Kimia Interaktif 3D">
+    <meta property="og:description"
+        content="Pahami atom, orbital, dan molekul lewat visualisasi 3D interaktif. Lebih murah dari bimbel, lebih seru dari buku teks.">
+    <meta property="og:image" content="https://sains-atomic.web.id/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Atomic">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atomic — Belajar Kimia Interaktif 3D">
+    <meta name="twitter:description"
+        content="Pahami atom, orbital, dan molekul lewat visualisasi 3D interaktif. Lebih murah dari bimbel, lebih seru dari buku teks.">
+    <meta name="twitter:image" content="https://sains-atomic.web.id/img/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Atomic",
+      "url": "https://sains-atomic.web.id",
+      "description": "Platform belajar kimia interaktif 3D untuk pelajar SMA. Visualisasi atom, orbital, dan molekul dalam 3D.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "29000",
+        "priceCurrency": "IDR",
+        "description": "Paket Pelajar Bulanan"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "SAINS",
+        "url": "https://sains-atomic.web.id"
+      },
+      "inLanguage": ["id", "en"],
+      "screenshot": "https://sains-atomic.web.id/img/og-image.png"
+    }
+    </script>
 </head>
 
 <body>
@@ -348,7 +405,24 @@
                     </div>
                     <div class="form-group">
                         <label for="reg-password">Password</label>
-                        <input type="password" id="reg-password" placeholder="Min. 8 karakter" required minlength="8">
+                        <div class="password-wrap">
+                            <input type="password" id="reg-password" placeholder="Min. 8 karakter" required
+                                minlength="8">
+                            <button type="button" class="pw-toggle" onclick="togglePassword('reg-password', this)"
+                                aria-label="Tampilkan password">
+                                <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" style="display:none">
+                                    <path
+                                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                                    <line x1="1" y1="1" x2="23" y2="23" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full" id="btn-register">
                         <span class="btn-text">Daftar & Bayar</span>
@@ -373,7 +447,23 @@
                     </div>
                     <div class="form-group">
                         <label for="login-password">Password</label>
-                        <input type="password" id="login-password" placeholder="Password kamu" required>
+                        <div class="password-wrap">
+                            <input type="password" id="login-password" placeholder="Password kamu" required>
+                            <button type="button" class="pw-toggle" onclick="togglePassword('login-password', this)"
+                                aria-label="Tampilkan password">
+                                <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <svg class="eye-closed" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" style="display:none">
+                                    <path
+                                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                                    <line x1="1" y1="1" x2="23" y2="23" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full" id="btn-login">
                         <span class="btn-text">Login & Bayar</span>
