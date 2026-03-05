@@ -1,0 +1,11 @@
+# https://sains-atomic.web.id/robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sains-atomic.web.id/sitemap.xml
+
+# Disallow admin/API paths (served by different subdomain, but just in case)
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
