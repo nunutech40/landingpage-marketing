@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atomic — Belajar Kimia SMA 3D Interaktif & Kurikulum Merdeka</title>
+    <title>Atomic — Belajar Kimia SMA 3D Interaktif</title>
     <meta name="description"
         content="Platform belajar kimia SMA terbaik dengan visualisasi 3D interaktif. Pahami atom, orbital, dan molekul sesuai Kurikulum Merdeka. Lebih murah dan efektif dari bimbel offline.">
     <meta name="keywords"
@@ -42,7 +42,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -167,6 +167,55 @@
                     <p class="problem-hook">Nilai Kimia jelek bukan karena kamu <em>bodoh</em> — tapi karena cara
                         belajarnya
                         yang <strong>belum tepat</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 3b: SOCIAL PROOF — TESTIMONIALS ═══════════════ -->
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="section-title">Yang Sudah <span class="gradient-text">Merasakan</span></h2>
+                <p class="section-sub">Mereka mulai dari bingung, sekarang jadi yang paling paham di kelas.</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Dulu orbital s, p, d cuma hafalan di buku. Sekarang bisa lihat
+                            bentuk 3D-nya langsung — baru ngeh kenapa elektron nempatin orbital tertentu. Nilai UAS naik
+                            dari 65 ke 88."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">R</div>
+                            <div>
+                                <strong>Rizka A.</strong>
+                                <span>Kelas 11 IPA, Jakarta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Molecule Builder-nya keren banget. Bisa susun atom sendiri terus
+                            lihat bentuk 3D-nya. Kimia jadi kayak main game tapi beneran ngerti. Guru kimia aja kaget
+                            nilai saya naik."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">F</div>
+                            <div>
+                                <strong>Fajar D.</strong>
+                                <span>Kelas 12 IPA, Bandung</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Jujur awalnya skeptis karena murah banget. Tapi setelah coba,
+                            ini lebih ngebantu daripada nonton video YouTube 30 menit. Sekarang pakai Atomic tiap malam
+                            sebelum ujian."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">S</div>
+                            <div>
+                                <strong>Sarah M.</strong>
+                                <span>Kelas 10 IPA, Surabaya</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -400,6 +449,24 @@
                     <!-- Cards will be populated by JS from API -->
                     <div class="loading-shimmer">Memuat harga...</div>
                 </div>
+                <noscript>
+                    <div class="pricing-note">
+                        <p>Harga mulai dari <strong>Rp 29.000/bulan</strong>. Aktifkan JavaScript untuk melihat semua
+                            paket.</p>
+                    </div>
+                </noscript>
+                <div class="value-stack">
+                    <p class="value-stack-title">Yang kamu dapat:</p>
+                    <div class="value-stack-items">
+                        <span class="value-item">⚛️ 118 Elemen 3D Interaktif <em>senilai Rp 500rb</em></span>
+                        <span class="value-item">🧪 Molecule Builder <em>senilai Rp 300rb</em></span>
+                        <span class="value-item">🌐 Konten Bilingual ID/EN <em>senilai Rp 200rb</em></span>
+                        <span class="value-item">📊 Data Lengkap 118 Elemen <em>senilai Rp 150rb</em></span>
+                        <span class="value-item">📱 Akses Unlimited, Semua Device <em>senilai Rp 100rb</em></span>
+                    </div>
+                    <p class="value-stack-total">Total Value: <span class="value-original">Rp 1.250.000</span> → Kamu
+                        bayar mulai <span class="value-final">Rp 29.000/bln</span></p>
+                </div>
                 <div class="pricing-note">
                     <p>💳 Bayar pakai QRIS, Transfer Bank, GoPay, OVO, DANA, ShopeePay</p>
                 </div>
@@ -566,7 +633,11 @@
                     <p>Mulai dari atom, bangun pemahaman ke atas — cara belajar yang sama dengan Feynman & Musk.
                         Cuma seharga 2 gelas kopi café per bulan.</p>
                     <a href="#pricing" class="btn btn-primary btn-lg" id="cta-final">Mulai Belajar Sekarang</a>
-                    <span class="final-note">Bisa batal kapan saja • Bayar bulanan</span>
+                    <div class="guarantee-badges">
+                        <span class="guarantee-badge">🛡️ Garansi 7 Hari Uang Kembali</span>
+                        <span class="guarantee-badge">🔄 Bisa Batal Kapan Saja</span>
+                        <span class="guarantee-badge">💳 Bayar Bulanan</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -584,6 +655,7 @@
                     <a href="#features">Fitur</a>
                     <a href="#pricing">Harga</a>
                     <a href="#faq">FAQ</a>
+                    <a href="pendidikan/" class="footer-cross-link">👨‍👩‍👧 Untuk Orang Tua</a>
                     <a href="terms.html">Syarat & Ketentuan</a>
                     <a href="privacy.html">Kebijakan Privasi</a>
                 </nav>
@@ -653,6 +725,19 @@
       ]
     }
     </script>
+
+    <!-- Floating WhatsApp Help Button -->
+    <a href="https://wa.me/6287831025157?text=Halo%2C%20saya%20mau%20tanya%20tentang%20Atomic" target="_blank"
+        rel="noopener" class="wa-float" aria-label="Chat WhatsApp" id="wa-help-btn">
+        <span class="wa-float-label">Butuh bantuan? 💬</span>
+        <div class="wa-float-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </div>
+    </a>
+
 </body>
 
 </html>
